@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# Aplicación de Tareas (Todo App)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta es una aplicación simple de lista de tareas (Todo) desarrollada con React Native y Expo. La aplicación permite a los usuarios crear, gestionar y dar seguimiento a sus tareas con una interfaz limpia e intuitiva.
 
-## Get started
+## Inspiración de Diseño
 
-1. Install dependencies
+El diseño de la interfaz está inspirado en [este diseño de Lista de Tareas en Behance](https://www.behance.net/gallery/90219979/Todo-List/modules/521605207) por Samuel Owusu-Aboagye.
+
+## Características
+
+- Crear nuevas tareas
+- Marcar tareas como completadas/pendientes
+- Eliminar tareas
+- Filtrar tareas (Todas, Completadas, Pendientes)
+- Persistencia de datos con AsyncStorage
+
+## Estructura del Proyecto
+
+- `app/`: Código principal de la aplicación
+-`components/`: Componentes UI como ítems de tareas, campos de entrada, etc.
+- `hooks/`: Hooks personalizados de React
+  - `useTodos.ts`: Hook para gestionar las tareas con persistencia
+- `interfaces/`: Interfaces de TypeScript
+
+## Tecnologías Utilizadas
+
+- React Native / Expo
+- TypeScript
+- AsyncStorage para persistencia de datos
+
+## Cómo Empezar
+
+1. Instalar dependencias
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Iniciar la aplicación
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Recomendaciones para Pruebas
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Para una mejor experiencia, recomendamos probar la aplicación en un dispositivo físico en lugar de solo un emulador. Para la persistencia de datos
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Puedes usar Expo Go en tu dispositivo físico escaneando el código QR que aparece cuando inicias la aplicación con `npx expo start`.
